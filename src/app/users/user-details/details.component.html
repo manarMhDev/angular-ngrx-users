@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="wrapper">
+            <div class="list-title">
+                <h3>User Details</h3>
+             </div>
+             <div class="profile-card">
+                <div class="cover-photo">
+                  <div class="profile-photo-container">
+                    <img [src]="(user | async)?.avatar" alt="Profile photo" class="profile-photo">
+                  </div>
+                </div>
+            
+                <div class="profile-info">
+                  <h1>{{ (user | async)?.first_name}} {{ (user | async)?.last_name}}</h1>
+            
+                  <p class="bio">
+                    {{ (user | async)?.email}}
+                  </p>
+            
+                  <div class="stats">
+                    <div class="stat">
+                      <div class="stat-value">   {{ (user | async)?.id}}</div>
+                      <div class="stat-label">Id</div>
+                    </div>
+                    <div class="stat">
+                      <div class="stat-value"> {{ (user | async)?.first_name}}</div>
+                      <div class="stat-label"> first name  </div>
+                    </div>
+                    <div class="stat">
+                      <div class="stat-value">{{ (user | async)?.last_name}}</div>
+                      <div class="stat-label">  last name </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5">
+                <button class="btn" [routerLink]="''">Back</button>
+              </div>
+             
+        </div>
+
+   
+    </div>
+ </div>

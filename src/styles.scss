@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Itim;
+    src: url(/fonts/Itim-Regular.ttf) format("truetype");
+  }
+  :root{
+    --primary-theme-color:#406AB3;
+  }
+body{
+    margin:0 ;
+    font-family: 'Itim', sans-serif !important;
+}
+
+html, body { height: 100%; }
+.list-title{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    }
+    .wrapper{
+        padding:20px 0 20px 0;
+    }
+    
